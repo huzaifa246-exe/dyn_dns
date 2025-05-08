@@ -1,0 +1,7 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: 'duckdns_updater'
+    static_configs:
+      - targets: ['dyn-updater:80']
